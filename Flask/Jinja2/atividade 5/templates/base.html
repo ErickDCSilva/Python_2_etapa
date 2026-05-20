@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade Jinja2</title>
+    <style>
+        body { font-family: Arial; margin: 20px; }
+        .requisito { margin: 30px 0; padding: 15px; border: 1px solid #ccc; }
+        h2 { color: #333; }
+        ul { list-style-type: none; }
+        li { padding: 5px; }
+    </style>
+</head>
+<body>
+    <h1>Atividade Jinja2</h1>
+
+    
+    <div class="requisito">
+        <h2>Requisito 1</h2>
+        <p>Olá, {{ nome }}</p>
+    </div>
+
+   
+    <div class="requisito">
+        <h2>Requisito 2 - Dados</h2>
+        <p>Nome: {{ dados.nome }}</p>
+        <p>Idade: {{ dados.idade }}</p>
+    </div>
+
+    
+    <div class="requisito">
+        <h2>Requisito 3 - Usuário</h2>
+        <p>Nome: {{ usuario.nome }}</p>
+        <p>Email: {{ usuario.email }}</p>
+    </div>
+
+    
+    <div class="requisito">
+        <h2>Requisito 4 - Lista de Alunos</h2>
+        <ul>
+        {% for aluno in alunos %}
+            <li>{{ loop.index }} - {{ aluno }}</li>
+        {% endfor %}
+        </ul>
+    </div>
+
+    
+    <div class="requisito">
+        <h2>Requisito 5 - Resultado</h2>
+        <p>Nota: {{ nota }}</p>
+        {% if nota >= 7 %}
+            <p><strong>Aprovado</strong></p>
+        {% else %}
+            <p><strong>Reprovado</strong></p>
+        {% endif %}
+    </div>
+
+</body>
+</html>
