@@ -1,0 +1,65 @@
+<!--Esse template herda no extends o layout.html
+ELe tem estruturas básicas de layout-->
+
+{% extends 'layout.html' %}
+
+
+{% block title %}
+Informações Profissionais
+{% endblock %}
+
+{% block content %}
+<h1>Meu Currículo</h1>
+
+<h2>Dados Pessoais</h2>
+<p>
+    <strong>Nome:</strong> Erick Silva<br>
+    <strong>Idade:</strong> 25 anos<br>
+    <strong>Email:</strong> erick.silva@email.com<br>
+    <strong>Telefone:</strong> (31) 99999-9999<br>
+    <strong>Localização:</strong> Belo Horizonte, MG
+</p>
+
+<h2>Objetivo Profissional</h2>
+<p>
+    Desenvolver-me na área de Desenvolvimento de Software e Inteligência Artificial, buscando oportunidades 
+    para aplicar conhecimentos em Python e aprender novas tecnologias que contribuam para o avanço da minha carreira.
+</p>
+
+<h2>Formação Acadêmica</h2>
+<p>
+    <strong>Colégio Técnico de Tecnologia da Informação - Cotemig</strong><br>
+    Curso: Técnico em Informática<br>
+    Período: 2022 - Presente (Previsão de conclusão: 2024)<br>
+    Disciplinas principais: Python, Banco de Dados, Redes, Desenvolvimento Web
+</p>
+
+<h2>Habilidades Técnicas</h2>
+<ul style="color: #333; line-height: 1.8; margin-bottom: 15px; font-size: 1.05em;">
+    <li><strong>Linguagens de Programação:</strong> Python, HTML, CSS, JavaScript, C#</li>
+    <li><strong>Web Frameworks:</strong> Flask, Jinja2 (em aprendizado)</li>
+    <li><strong>Banco de Dados:</strong> SQL</li>
+    <li><strong>Ferramentas:</strong> Git, Visual Studio Code, Jupyter Notebook</li>
+    <li><strong>Conceitos:</strong> Programação Orientada a Objetos, Algoritmos, Estruturas de Dados</li>
+</ul>
+
+<h2>Experiências e Projetos</h2>
+<p>
+    <strong>Projeto: Aplicação Web com Flask</strong><br>
+    Desenvolvimento de uma aplicação web com menu de navegação, templates dinâmicos e estilização CSS avançada.
+    Demonstração de conhecimento em roteamento, herança de templates e design responsivo.
+</p>
+
+<h2>Idiomas</h2>
+<p>
+    <strong>Português:</strong> Nativo<br>
+    <strong>Inglês:</strong> Basico 
+</p>
+
+<h2>Certificações e Cursos</h2>
+<p>
+    <strong>Python para Iniciantes</strong> - Cotemig (2026)<br>
+    <strong>Desenvolvimento Web com Flask</strong> - Cotemig (2026)
+</p>
+
+{% endblock %}

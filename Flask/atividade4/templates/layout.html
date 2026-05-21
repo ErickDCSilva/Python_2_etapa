@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>{% block title %}{% endblock %} - Flask Menu</title>
+</head>
+
+<body>
+    <div class="menu">
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('page2') }}">Informações Profissionais</a></li>
+                <li><a href="{{ url_for('page3') }}">Expectativas de Vida</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="conteudo">
+        {% block content %}{% endblock %}
+    </div>
+
+</body>
+
+</html>
